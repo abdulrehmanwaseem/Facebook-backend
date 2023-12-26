@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const DbConnection = async () => {
   try {
     await mongoose.connect(
-      `${process.env.MONGODB_CONNECTION_URL}/${process.env.DB_NAME}`
+      `mongodb+srv://abdulrehmancode1:facebook123@facebook.6rb8sga.mongodb.net/facebook`
     );
     console.log("DataBase Connected");
   } catch (error) {
